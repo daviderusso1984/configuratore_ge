@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <android.support.design.widget.CoordinatorLayout
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"     
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">    
+        <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+       >
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                 />
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+		android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout
+            android:orientation="vertical"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout1" >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+					<TextView
+						android:text="Non Connesso"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/textView_connessione" />					
+                    <Button
+                       
+                        android:textColor="@color/colorPrimary"
+                        android:text="Connetti il GE"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/button_connessione"
+                        android:layout_gravity="right"
+                        android:textStyle="bold" />                   
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">				
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/textView_firmware" />	
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/textView_tx_num_ev" />
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/textView_tx_num_rec" />                       
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Controllo Presenza Acqua Canale 1"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1" />				
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOn_Acqua1" />	
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TE_Acqua1" />
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Acqua1" />	  
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/F_Acqua1" />	
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOut_Acqua1" />	
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Controllo Presenza Acqua Canale 2"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1" />				
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOn_Acqua2" />	  
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TE_Acqua2" />
+                      <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Acqua2" />	  
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/F_Acqua2" />	
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOut_Acqua2" />	
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+               <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Controllo Presenza Acqua Canale 3"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1" />				
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOn_Acqua3" />	 
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TE_Acqua3" />
+                      <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Acqua3" />	  
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/F_Acqua3" />	
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOut_Acqua3" />	
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+              <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Controllo Tensione del Carica Batterie"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1" />				
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/Ton_Tensione" />	
+                       <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TE_Tensione" />	   
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/T_Custom_Battery" />	 
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TB_Type_Battery" />	 
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_CB_Min" />	  
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_CB_Max" />	  
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOut_Tensione" />	  
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+              <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Controllo della Temperatura"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1" />				
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOn_Temperature" />
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TE_Temperature" />
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Temperature_Max" />	
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOut_Temperature" />	 
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+             <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_margin">
+                <LinearLayout
+                    android:orientation="vertical"
+                    style="@style/Widget.CardContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:text="Controllo Curva di Avviamento"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView1" />				
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/Ton_Record" />	 
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TE_Record" />
+                       <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Soglia_Rec" />	 
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Start_Min_Rec" />	 
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Start_Max_Rec" />	 
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Start_Negative_Slope" />	 
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Start_Positive_Slope" />	
+                       <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_RUN_POsitive_Slope" />	 
+                       <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Run_Min_Rec" />	 
+                       <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Run_Max_Rec" />	 
+                       <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Rec_Max_T" />	
+                      <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Rec_Max_T" />	
+                    <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TA_Time_Rec" />	
+                     <TextView
+						android:text=""
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:minWidth="25px"
+						android:minHeight="25px"
+						android:id="@+id/TOut_Record" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+        
+
+    </android.support.v4.widget.NestedScrollView>
+   </android.support.design.widget.CoordinatorLayout>

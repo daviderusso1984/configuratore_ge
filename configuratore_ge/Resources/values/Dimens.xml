@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+  <dimen name="detail_backdrop_height">256dp</dimen>
+  <dimen name="card_margin">8dp</dimen>
+  <dimen name="fab_margin">8dp</dimen>
+  <dimen name="list_item_avatar_size">40dp</dimen>
+
+  <dimen name="schedina_riga">0dp</dimen>
+  <dimen name="schedina_riga_int">1dp</dimen>
+  <dimen name="schedina_riga_numeri">33dp</dimen>
+  <dimen name="schedina_riga_numeri_testo">15dp</dimen>
+  <dimen name="schedina_riga_ruota_testo">10dp</dimen>
+  <dimen name="schedina_riga_ruota_testo">10dp</dimen>
+  <dimen name="schedina_riga_ruota">26.2dp</dimen>
+
+  <!--dimensioni totali-->
+  <dimen name="schedina_wtot_giocate">443dp</dimen>
+  <dimen name="schedina_riga_giocate_wcolonna1">70dp</dimen>
+  <dimen name="schedina_riga_giocate_wcolonne">28dp</dimen>
+  <dimen name="schedina_riga_giocate_wcolonne1">28.4dp</dimen>
+  <dimen name="schedina_riga_giocate_wcolonne2">26.4dp</dimen>
+  <dimen name="schedina_riga_giocate_hcolonne">20dp</dimen>
+  <dimen name="schedina_riga_giocate_testo">10dp</dimen>
+
+
+</resources>
